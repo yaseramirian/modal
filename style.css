@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 4rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10rem;
+}
+
+h1 {
+  font-size: 3rem;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+button {
+  width: 10rem;
+  padding: 1rem 1rem;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 0.5rem;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: -1;
+  backdrop-filter: blur(6px);
+}
+
+.modal {
+  width: 50rem;
+  height: 40rem;
+  background-color: rgba(256, 256, 256, 0.1);
+  border-radius: 1rem;
+  display: none;
+  flex-direction: column;
+  backdrop-filter: blur(8px);
+}
+
+.modal-container {
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  padding-bottom: 3rem;
+  text-align: justify;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.close-modal-btn {
+  width: 2rem;
+  border: none;
+  margin: 1rem;
+  padding: 0;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.close-modal-btn:hover {
+  background: transparent;
+}
